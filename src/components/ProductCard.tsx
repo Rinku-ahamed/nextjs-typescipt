@@ -5,7 +5,7 @@ import Link from "next/link";
 const ProductCard = ({ item }: { item: Product }) => {
   return (
     <div className="border p-3 rounded text-center">
-      <Link href={`/products/${item.title}`}>
+      <Link href={`/products/${item.id}`}>
         <Image
           src={item.image}
           width={200}

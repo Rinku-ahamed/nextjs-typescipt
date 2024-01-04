@@ -22,8 +22,14 @@ const Header = async () => {
               </Link>
             ))}
           </div>
-          <div>
-            <ShoppingCart />
+          <div className="pe-2 flex gap-3 items-end">
+            <div className="relative">
+              <ShoppingCart className="text-white text-xl" />
+              <span className="absolute bg-red-900 text-white w-4 h-4 flex justify-center items-center top-0 -right-2 text-[10px] rounded-full">
+                10
+              </span>
+            </div>
+            <span className="text-sm text-white">$100</span>
           </div>
         </div>
       </nav>
