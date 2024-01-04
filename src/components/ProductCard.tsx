@@ -9,11 +9,12 @@ const ProductCard = ({ item }: { item: Product }) => {
         <Image
           src={item.image}
           width={200}
-          height={150}
+          height={240}
           alt={item.title}
-          className="w-full h-[200px] md:h-[250px]"
+          className="w-full h-[180px] md:h-[240px]"
+          blurDataURL=""
         />
-        <h2 className="text-[17px] mt-2 h-[51px] overflow-hidden">
+        <h2 className="text-[16px] mt-2 h-[51px] overflow-hidden">
           {item.title.slice(0, 52)}
         </h2>
       </Link>

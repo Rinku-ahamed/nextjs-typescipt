@@ -8,7 +8,7 @@ export const generateMetadata = async ({
   const products = await getProducts();
   const singleProduct = products.find((item: any) => item.id === id);
   return {
-    title: singleProduct.title,
+    title: singleProduct?.title,
   };
 };
 const ProductDetails = ({ params: { id } }: { params: { id: string } }) => {
